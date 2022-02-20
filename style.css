@@ -19,7 +19,7 @@ body {
 }
 
 body.show-nav {
-  /* Width of nav */
+  /* Width of nav = 200px */
   transform: translateX(200px);
 }
 
@@ -151,6 +151,16 @@ button:focus {
   animation-duration: var(--modal-duration);
 }
 
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .modal-header {
   background: var(--primary-color);
   color: var(--secondary-color);
@@ -186,14 +196,4 @@ button:focus {
   position: absolute;
   top: 0;
   right: 0;
-}
-
-@keyframes modalopen {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
 }
